@@ -1,0 +1,33 @@
+CREATE TABLE Departments (
+            Departments_id int(4) Primary key,
+            Departments_name VAECHAR(30) Not NULL,
+            Manager_id int(6),
+            Location_id int(4));
+
+****************************************
+
+CREATE TABLE Employee (
+           Employee_Id int ( 6 ) Primary key,
+            First_Name varchar ( 20 ) ,
+            Last Name varchar ( 25 ),
+              Email varchar ( 25 ),
+             Phone Number varchar ( 15 ),
+              Hire Date date,
+              Job Id varchar ( 10 ),
+               Salary int ( 8 ) ,
+               Commission pct float Manager_id int ( 6 ),
+                Department ld int ( 4 ));
+
+
+************************************************
+
+
+CREATE TABLE Locations (
+                Department_ID INT (4),
+                Department_Name Varchar (30),
+                Manager_ID Int (6),
+                  Location_ID Int(4));
+
+
+
+        
