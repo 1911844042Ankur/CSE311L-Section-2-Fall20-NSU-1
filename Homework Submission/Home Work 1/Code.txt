@@ -23,11 +23,12 @@ CREATE TABLE Employee (
 
 
 CREATE TABLE Locations (
-                Department_ID INT (4),
-                Department_Name Varchar (30),
-                Manager_ID Int (6),
-                  Location_ID Int(4));
-
+              Location_ID int(4),
+              Street_Address varchar(40),
+              Postal_code varchar(12),
+              City  varchar(30),
+              State_province varchar(25)
+              Country_ID varchar(2));
 
 
         
