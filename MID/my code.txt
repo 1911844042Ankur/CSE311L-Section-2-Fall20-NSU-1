@@ -1,0 +1,39 @@
+CREATE DATABASE Mid_Term_Su
+
+******************************
+CREATE TABLE student_data(
+    snum decimal(9,0) Primary key,
+    sname varchar(30),
+    major varchar(25),
+    level varchar(2),
+    age decimal(3,0));
+    ******************
+CREATE TABLE depertmant_data(
+     fid decimal(9,0) PRIMARY KEY,
+    fname varchar(30),
+    deptid decimal(2,0));
+**************************
+CREATE TABLE course(
+    snum decimal(9,0) PRIMARY KEY,
+    cname varchar(40) PRIMARY KEY FOREIGN KEY);
+*********************************
+CREATE TABLE class(
+    name varchar(40) PRIMARY KEY ,
+    meets_at varchar(20),
+    room varchar(10),
+    fid decimal(9,0) );
+**************************
+CREATE TABLE provider(
+    sid int(9) PRIMARY KEY,
+    sname varchar(40),
+    address varchar(40));
+**************************
+CREATE TABLE goodies(
+    pid int(9) PRIMARY KEY,
+    pname varchar(40),
+    color varchar(15));
+************************
+CREATE TABLE stock(
+       sid int(9) PRIMARY KEY,
+       pid int(9),
+       cost int(10));
